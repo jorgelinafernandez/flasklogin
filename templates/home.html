@@ -1,0 +1,5 @@
+{% if not user %}
+    <p>Hola! Anonimo, <a href="/login">inicia sesión!</a><p>
+{% else %}
+    <p>Hola! {{ user.username }}<p>
+{% endif %}
